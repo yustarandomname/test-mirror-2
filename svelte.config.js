@@ -13,6 +13,10 @@ const config = {
 			assets: 'build',
 			fallback: null
 		})
+	},
+	paths: {
+		// change below to your repo name
+		base: '/test-mirror-2'
 	}
 };
 
