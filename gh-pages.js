@@ -1,13 +1,13 @@
-import { publish } from 'gh-pages';
+var ghpages = require('gh-pages');
 
-publish(
+ghpages.publish(
 	'build', // path to public directory
 	{
-		branch: 'gh-pages',
-		repo: 'https://github.com/el3um4s/memento-sveltekit-and-github-pages.git', // Update to point to your repository
+		branch: 'main',
+		repo: 'https://github.com/yustarandomname/test-mirror-2.git', // Update to point to your repository
 		user: {
-			name: 'Samuele de Tomasi', // update to use your name
-			email: 'samuele@stranianelli.com' // Update to use your email
+			name: 'yustarandomname', // update to use your name
+			email: 'abeldebruijn@hotmail.com' // Update to use your email
 		},
 		dotfiles: true
 	},

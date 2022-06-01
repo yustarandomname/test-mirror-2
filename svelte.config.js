@@ -9,14 +9,19 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
+			pages: 'build', // path to public directory
+			assets: 'build', // path to public directory
 			fallback: null
-		})
-	},
-	paths: {
-		// change below to your repo name
-		base: '/test-mirror-2'
+		}),
+
+		// Override http methods in the Todo forms
+		methodOverride: {
+			allowed: ['PATCH', 'DELETE']
+		},
+		paths: {
+			// change below to your repo name
+			base: '/test-mirror-2'
+		}
 	}
 };
 
